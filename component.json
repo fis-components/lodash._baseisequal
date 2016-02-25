@@ -1,0 +1,13 @@
+{
+    "name": "lodash._baseisequal",
+    "description": "The internal lodash function `baseIsEqual` exported as a module.",
+    "repos": "https://github.com/lodash/lodash.git",
+    "tag": "master",
+    "reposType": "npm",
+    "dependencies": {
+        "lodash._stack": "^4.0.0",
+        "lodash.keys": "^4.0.0"
+    },
+    "main": "index.js",
+    "version": "4.0.1"
+}
