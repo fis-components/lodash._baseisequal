@@ -10,5 +10,5 @@
         "lodash.keys": "^3.0.0"
     },
     "main": "index.js",
-    "version": "3.0.6"
+    "version": "3.0.7"
 }
