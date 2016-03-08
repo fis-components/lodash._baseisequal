@@ -21,21 +21,6 @@ var argsTag = '[object Arguments]',
     regexpTag = '[object RegExp]',
     stringTag = '[object String]';
 
-/**
- * Converts `value` to a string if it is not one. An empty string is returned
- * for `null` or `undefined` values.
- *
- * @private
- * @param {*} value The value to process.
- * @returns {string} Returns the string.
- */
-function baseToString(value) {
-  if (typeof value == 'string') {
-    return value;
-  }
-  return value == null ? '' : (value + '');
-}
-
 /** Used for native method references. */
 var objectProto = Object.prototype;
 
@@ -244,7 +229,7 @@ function equalByTag(object, other, tag) {
     case stringTag:
       // Coerce regexes to strings and treat strings primitives and string
       // objects as equal. See https://es5.github.io/#x15.10.6.4 for more details.
-      return object == baseToString(other);
+      return object == (other + '');
   }
   return false;
 }
